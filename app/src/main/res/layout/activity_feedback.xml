@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_8"
+    android:orientation="vertical"
+    tools:context=".view.FeedbackActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvTopic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:gravity="center|start"
+        android:hint="@string/topicFeedback"
+        android:inputType="textEmailSubject"
+        android:paddingHorizontal="@dimen/dimen_8" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:gravity="center|start"
+        android:hint="@string/emailFeedback"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="@dimen/dimen_8" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_122"
+        android:gravity="center|start"
+        android:hint="@string/feedBack"
+        android:paddingHorizontal="@dimen/dimen_8" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:text="@string/send"
+        android:textColor="@color/black" />
+</LinearLayout>
